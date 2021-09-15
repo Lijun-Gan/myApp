@@ -4,44 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="app.css" />
-    <link rel="stylesheet" href="app.cs">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Audiowide&family=DM+Sans&family=Exo+2:wght@100&family=Major+Mono+Display&family=Michroma&family=Press+Start+2P&family=Quicksand:wght@300&family=Thasadith&family=Ubuntu+Mono&display=swap">
-    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Audiowide&family=DM+Sans&family=Exo+2:wght@100&family=Major+Mono+Display&family=Michroma&family=Press+Start+2P&family=Quicksand:wght@300&family=Thasadith&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+    <title>MyApp</title>
 </head>
 <body>
-    <nav>
-      
-        <button>app</button>
-        <button>blog</button>
-        <button>shop</button>
-        <button>note</button>
-        <button>game</button>
+    <div class="diagonal-box">
+        <div class="container">
+            <nav>
+                <a href="">app</a>
+                <a href="">blog</a>
+                <a href="">shop</a>
+                <a href="">note</a>
+                <a href="">game</a>
+            </nav>
 
-    </nav>
+     
+                <aside class="left">
+                    <button id='button-left'><</button>
+                </aside>
+            
+                <main>
+              
+                <span>myApp <span id="app-name" class="app-name"></span></span>
+                <p class="release-date">coming soon</p>
+                </main>
+            
+                <aside class="right">
+                    <button id='button-right'>></button>
+                </aside>
 
-    
-    <div class="carousel-container">
-        <div class="carousel-slide">
-            <aside class="left">
-                <button id='button-left'>></button>
-            </aside>
-            <span>tiny
-            <span id="app-name" class="app-name">app</span>
-            <!-- <span id="app-name" class="app-name">blog</span>
-            <span id="app-name" class="app-name">shop</span>
-            <span id="app-name" class="app-name">note</span>
-            <span id="app-name" class="app-name">game</span>
-            <span id="app-name" class="app-name">grave</span> -->
-            </span>
-    
-        </div>
-        <p class="release-date" >comming soon</p>
+
+            <footer>
+            </footer>
+          </div>
     </div>
-
-    <aside class="right">
-        <button id='button-right'>></button>
-    </aside>
-    
 </body>
 </html>

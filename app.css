@@ -1,4 +1,4 @@
-nav{
+/* nav{
     display: flex;
     font-family: 'DM Sans', sans-serif;
     justify-content: space-between;
@@ -16,13 +16,12 @@ button{
 
 aside button {
     font-size: 2rem;
-    color: firebrick;
 }
 
 div{
    
     font-size: 7rem;
-    /* text-align: center; */
+ 
     justify-content: center;
     font-family: 'Audiowide', cursive;
 }
@@ -42,4 +41,185 @@ div{
     text-align: center;
 }
 
+@media all and (max-width: 700px) {
+    aside,
+    main {
+        grid-column: 1 / 4;
+    }
+    main {
+        font-size: 4rem;
+    }
+}
+   
+ */
+/* 
+ nav{
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
 
+button{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+aside button {
+    font-size: 2rem;
+    width: 150px;
+}
+
+.carousel{
+    display: flex;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav a{
+
+    font-family: 'DM Sans', sans-serif;
+
+    padding: 0 1rem;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+div{
+   
+    font-size: 7rem;
+    text-align: center;
+
+    justify-content: space-between;
+    font-family: 'Audiowide', cursive;
+}
+
+
+
+.carousel-slide{
+    display: flex;
+}
+
+.app-name {
+    color: #2ED9EB;
+    text-align: center;
+}
+
+.release-date{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    white-space: nowrap;
+}
+
+@media all and (max-width: 700px) {
+    aside,
+    main {
+        grid-column: 1 / 4;
+    }
+    main {
+        font-size: 4rem;
+    }
+}
+   
+
+
+body{
+    margin: 0 1rem;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 80em;
+}
+
+button,
+a {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+}
+
+.container > * {
+    font-family: 'Audiowide', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container nav {
+    font-family: 'DM Sans', sans-serif;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    font-size: 7rem;
+    text-align: center;
+}
+
+aside button {
+    font-size: 2rem;
+}
+
+.app-name {
+    color: #2ED9EB;
+}
+
+.release-date {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2rem;
+}
+
+nav, footer {
+    grid-column: 1 / 4;
+}
+
+.dark {
+    background-color: #000000;
+}
+
+@media all and (max-width: 700px) {
+    aside,
+    main {
+        grid-column: 1 / 4;
+    }
+    main {
+        font-size: 4rem;
+    }
+}
+    
