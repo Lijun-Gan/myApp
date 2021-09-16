@@ -1,10 +1,10 @@
 let navItems = [
     'app', 
     'blog', 
-    'shop',
-    'note',
-    'game',
-    'sky'
+    'picture',
+    'video',
+    'aboutMe',
+    'suprise'
 ]
 
 let displayedApp = document.getElementById('app-name')
