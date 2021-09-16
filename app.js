@@ -7,19 +7,19 @@ let navItems = [
     'suprise'
 ]
 
-let displayedApp = document.getElementById('app-name')
-displayedApp.innerHTML = navItems[0]
+let showNavItem = document.getElementById('app-name')
+showNavItem.innerHTML = navItems[0]
 
 const toggleDark = () => {
     document.body.style.color = '#FFFFFF'
     document.body.style.backgroundColor = '#8fd2f6'
-    displayedApp.style.color = '#9C27B0'
+    showNavItem.style.color = '#9C27B0'
 }
 
 const toggleLight = () => {
     document.body.style.color = '#000000'
     document.body.style.backgroundColor = '#FFFFFF'
-    displayedApp.style.color = '#8fd2f6'
+    showNavItem.style.color = '#8fd2f6'
 }
 
 const rotateRight = () => {
@@ -35,15 +35,15 @@ const rotateLeft = () => {
 
 const toggleRight = () => {
     let carosel = rotateRight();
-    displayedApp.innerHTML = carosel[0];
-    carosel[0] === 'sky' ?  toggleDark() : toggleLight()
+    showNavItem.innerHTML = carosel[0];
+    carosel[0] === 'suprise' ?  toggleDark() : toggleLight()
 }
 
 const toggleLeft = () => {
 
     let carosel = rotateLeft();
-    displayedApp.innerHTML = carosel[0];
-    carosel[0] === 'sky' ? toggleDark() : toggleLight()
+    showNavItem.innerHTML = carosel[0];
+    carosel[0] === 'suprise' ? toggleDark() : toggleLight()
 }
 
 document.getElementById('button-right').onclick = toggleRight;
